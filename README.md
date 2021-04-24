@@ -1,2 +1,2 @@
-# pwa-pain
+# pwa-paint
 PWA Paint App
