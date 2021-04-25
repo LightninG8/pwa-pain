@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <Suspense fallback={'loading...'}>
       <Box component="div" className='app'>
-        <Container maxWidth="xs" disableGutters className={s.container}>
+        <Container maxWidth="xs" className={s.container}>
           <Counter/>
         </Container>
       </Box>

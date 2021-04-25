@@ -30,13 +30,13 @@ const CounterView = (props: any) => {
       className={s.container}
     >
       <Grid item>
-        <Button variant="contained" color="primary" onClick={props.inc}>INC</Button>
+        <Button variant="contained" color="primary" onClick={props.dec}>-</Button>
       </Grid>
       <Grid item>
         <h1 className={s.centerItem}>{props.counter}</h1>
       </Grid>
       <Grid item>
-        <Button variant="contained" color="primary" onClick={props.dec}>DEC</Button>
+        <Button variant="contained" color="primary" onClick={props.inc}>+</Button>
       </Grid>
     </Grid>
   );
