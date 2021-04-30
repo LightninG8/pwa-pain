@@ -1,0 +1,61 @@
+.toolsGroup {
+  padding: 2px 5px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolsGroupBorder {
+  border-right: 1px solid #E0E0E0;
+}
+
+.title {
+  margin-top: 3px;
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.trigger {
+  height: 100%;
+
+  padding: 4px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  
+  font-size: 12px;
+  line-height: 14px;
+
+  cursor: pointer;
+  border: 1px solid #607D8B;
+  background: #CFD8DC;
+}
+.trigger:hover {
+  border: 1px solid #607D8B;
+  background: #d9e3e7;
+}
+.triggerIcon,
+.triggerTitle,
+.triggerArrow {
+  display: grid;
+  justify-content: center;
+
+  line-height: 0;
+}
+
+.triggerTitle {
+  line-height: 0;
+}
+.triggerArrow {
+  line-height: 0;
+}
+.triggerIcon svg {
+  padding: 4px;
+  box-sizing: content-box;
+
+  border: 1px solid #B0BEC5;
+  background: #ECEFF1;
+}

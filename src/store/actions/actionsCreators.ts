@@ -1,9 +1,6 @@
 import { ACTIONS } from '../constants';
 
-export const dec = () => ({
-  type: ACTIONS.DEC
-});
-
-export const inc = () => ({
-  type: ACTIONS.INC
+export const setTool = (tool: string) => ({
+  type: ACTIONS.SET_TOOL,
+  payload: tool
 });

@@ -1,4 +1,3 @@
 export const ACTIONS = {
-  INC: 'INC',
-  DEC: 'DEC'
+  SET_TOOL: 'SET_TOOL'
 };

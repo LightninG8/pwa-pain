@@ -1,7 +1,14 @@
 body {
+  font-family: Roboto;
+
   background-color: #f5f5f5;
 }
 .app {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+
+  color: #424242;
+}
+.MuiTooltip-popper {
+  z-index: 1000000000000;
 }

@@ -1,15 +1,8 @@
 import { ACTIONS } from '../store/constants/actionsNames';
 
-export interface CounterState {
-  counter: number;
+export interface SetToolAction {
+  type: typeof ACTIONS.SET_TOOL;
+  payload: string;
 }
 
-export interface DecAction {
-  type: typeof ACTIONS.DEC;
-}
-
-export interface IncAction {
-  type: typeof ACTIONS.INC;
-}
-
-export type CounterAction = IncAction | DecAction;
+export type Action = SetToolAction;

@@ -1,0 +1,1 @@
+export { RedactorMain } from './RedactorMain';

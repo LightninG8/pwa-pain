@@ -1,2 +1,2 @@
-export { initialState } from './initialState';
+export { editorState } from './editorState';
 export { ACTIONS } from './actionsNames';

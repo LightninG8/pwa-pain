@@ -1,0 +1,22 @@
+.tool {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.tool:hover {
+  border: 1px solid #90A4AE;
+  background: #ECEFF1;
+}
+.tool:active {
+  border: 1px solid #607D8B;
+  background: #CFD8DC;
+}
+
+.activeTool {
+  border-color: #607D8B;
+  background: #cfd8dc;
+}
+.activeTool:hover {
+  border-color: #698897;
+  background: #dbe5e9;
+}

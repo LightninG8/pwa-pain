@@ -1,27 +1,22 @@
 import React, {Suspense} from 'react';
-import { Box, Container } from '@material-ui/core';
-import { Counter } from './components';
-import { makeStyles, createStyles } from '@material-ui/core';
-
-const useStyles = makeStyles(() =>
-  createStyles({
-    container: {
-      height: '100%'
-    }
-  }),
-);
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { Redactor } from 'containers';
+import 'semantic-ui-css/semantic.min.css';
 
 const App: React.FC = () => {
-  const s = useStyles();
-
   return (
-    <Suspense fallback={'loading...'}>
-      <Box component="div" className='app'>
-        <Container maxWidth="xs" className={s.container}>
-          <Counter/>
-        </Container>
-      </Box>
-    </Suspense>
+    <div className='app'>
+      <Suspense fallback={'loading...'}>
+        <Router>
+          <Switch>
+            <Route
+              path='/'
+              exact={true}
+              component={(props: any) => <Redactor {...props}/>}/>
+          </Switch>
+        </Router>
+      </Suspense>
+    </div>
   );
 };
 

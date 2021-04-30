@@ -1,0 +1,1 @@
+export { RedactorFooter } from './RedactorFooter';

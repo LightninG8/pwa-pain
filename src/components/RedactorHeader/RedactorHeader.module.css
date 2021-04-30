@@ -1,0 +1,19 @@
+.header {
+  z-index: 1;
+  
+  height: 90px;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(58, 18, 18, 0.5);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  background: #ECEFF1;
+}
+
+.headerBody {
+  height: 100%;
+  padding: 2px 0 3px 0;
+  display: flex;
+
+  overflow-x: auto;
+}
+
