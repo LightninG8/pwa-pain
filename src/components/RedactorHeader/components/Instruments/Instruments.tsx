@@ -1,4 +1,4 @@
-import cs from 'commonStyles/common.module.css';
+import cs from 'styles/common.module.css';
 import s from './Instruments.module.css';
 
 import { Tooltip } from '@material-ui/core';
@@ -6,6 +6,8 @@ import { instrumentsList } from './constants';
 import { useSelector, useDispatch } from 'react-redux';
 import { activeToolSelector } from 'selectors';
 import { setTool } from 'store';
+
+import { ToolsGroup } from 'components';
 
 export const Instruments = () => {
   const dispatch = useDispatch();
@@ -31,8 +33,10 @@ export const Instruments = () => {
   });
 
   return (
-    <div className={s.tools}>
-      {instruments}
-    </div>
+    <ToolsGroup title='Инструменты'>
+      <div className={s.tools}>
+        {instruments}
+      </div>
+    </ToolsGroup>
   );
 };

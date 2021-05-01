@@ -1,24 +1,17 @@
 import s from './RedactorHeader.module.css';
 
-import { Instruments } from './components';
+import { Instruments, Thickness, Colors } from './components';
 
-import { ToolsGroup } from 'components';
-import SpellcheckIcon from '@material-ui/icons/Spellcheck';
-
+// import SpellcheckIcon from '@material-ui/icons/Spellcheck';
+// import LineWeightIcon from '@material-ui/icons/LineWeight';
 
 export const RedactorHeader = () => {
   return (
     <header className={s.header}>
       <div className={s.headerBody}>
-        <ToolsGroup title='Цвета'>
-          1234
-        </ToolsGroup>
-        <ToolsGroup title='Инструменты'>
-          <Instruments/>
-        </ToolsGroup>
-        <ToolsGroup title='Инструменты' type='popup' icon={<SpellcheckIcon/>}>
-          <Instruments/>
-        </ToolsGroup>
+        <Instruments/>
+        <Thickness/>
+        <Colors/>
       </div>
     </header>
   );

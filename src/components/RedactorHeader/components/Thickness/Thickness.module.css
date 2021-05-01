@@ -1,0 +1,15 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  padding: 10px 5px;
+}
+
+.listItem div {
+  width: 80px;
+  height: 5px;
+  background: #212121;
+}

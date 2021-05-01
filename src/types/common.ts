@@ -5,4 +5,12 @@ export interface SetToolAction {
   payload: string;
 }
 
-export type Action = SetToolAction;
+export interface SetThicknessAction {
+  type: typeof ACTIONS.SET_THICKNESS;
+  payload: number;
+}
+
+export type Action<P = Object> = {
+  type: string;
+  payload?: P;
+};
