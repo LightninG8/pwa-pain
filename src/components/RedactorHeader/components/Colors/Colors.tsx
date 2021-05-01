@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { paletteSelector, colorsSelector } from 'selectors';
 import { setColor, setColorNum } from 'store';
 
+import PaletteIcon from '@material-ui/icons/Palette';
+
 export const Colors = () => {
   const dispatch = useDispatch();
 
@@ -59,7 +61,7 @@ export const Colors = () => {
   });
 
   return (
-    <ToolsGroup title='Инструменты'>
+    <ToolsGroup title='Цвета' popup icon={<PaletteIcon/>}>
       <div className={s.colors}>
         <div className={s.mainColors}>
           {colorsList}

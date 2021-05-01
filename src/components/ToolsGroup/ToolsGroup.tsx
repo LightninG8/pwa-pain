@@ -45,6 +45,7 @@ export const ToolsGroup = ({title, children, popup, icon, list, disabled}: Props
         <Popup
           style={popupStyles}
           trigger={popupTrigger}
+          position='bottom center'
           flowing
           basic
           disabled={disabled}
